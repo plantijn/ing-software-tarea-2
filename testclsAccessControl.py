@@ -23,7 +23,17 @@ class ClsAccessControlTester(unittest.TestCase):
      #    mensajeEncriptado = aClsAccessControl.encript(s4)
         
     def testClsAccessControlCheck_password(self):
-        s4 = "pa$$w0rD"
+        
+        #Casos Esquina
+        
+        s0 = "M3ñ0$d8" #Longitud 7
+        s1 = "C@d3ñA_ca%a(|3&E$" #longitud 17
+        s3 = "" #longitud 0
+        s4 = "pa$$w0rD" #longitud 8
+        s5 = "169rháéíñ}Á!Qzp0"  #longitud 16
+        s6 = "|2E4$7()" #longitud 8
+        s7 = "ñp890dfWn.z<%éo#" #longitud 16
+        
         aClsAccessControl = clsAccessControl()
-        mensajeEncriptado = aClsAccessControl.encript(s4)
-        self.assertTrue(aClsAccessControl.check_password(mensajeEncriptado,s4),"Deberia ser true")
+        mensajeEncriptado = aClsAccessControl.encript(s0)
+        self.assertTrue(aClsAccessControl.check_password(mensajeEncriptado,s0),"Las contraseñas difieren en longitud o en contenido")
