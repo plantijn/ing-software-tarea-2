@@ -40,17 +40,17 @@ class clsAccessControl(object):
         return len(user_password)
 
 #Para encriptar un passwork  
-oPassword = input('Por favor ingrese su password: ')
+#oPassword = input('Por favor ingrese su password: ')
 #Se crea un objeto tipo clsAccessControl
-oAccessControl=clsAccessControl()
-oPassworkEncript = oAccessControl.encript(oPassword)
-print('El Password almacenado en la memoria es: ' + oPassworkEncript)
-if oPassworkEncript:
+#oAccessControl=clsAccessControl()
+#oPassworkEncript = oAccessControl.encript(oPassword)
+#print('El Password almacenado en la memoria es: ' + oPassworkEncript)
+#if oPassworkEncript:
     #Para validar el passwork introducido
-    oCheckPassword = input('Para verificar su password, ingreselo nuevamente: ')
-    if oAccessControl.check_password(oPassworkEncript, oCheckPassword):
-        print('Ha introducido el password correcto')
-    else:
-        print('El password es diferente')
+#    oCheckPassword = input('Para verificar su password, ingreselo nuevamente: ')
+#    if oAccessControl.check_password(oPassworkEncript, oCheckPassword):
+#        print('Ha introducido el password correcto')
+#    else:
+#        print('El password es diferente')
 
 

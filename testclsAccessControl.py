@@ -7,14 +7,7 @@ import unittest
 from mdlaccesscontrol import *
 
 class ClsAccessControlTester(unittest.TestCase):
-    #Casos Frontera
-    s0 = "M3ñ0$d8"
-    s1 = "C@d3ñA_ca%a(|3&E$" 
-    s3 = ""
-    
-    #Cadena de caracteres válida
-    s4 = "pa$$w0rD"
-    
+
     #def testClsAccessControl(self):
         #aClsAccessControl = clsAccessControl(object)
        
@@ -26,14 +19,14 @@ class ClsAccessControlTester(unittest.TestCase):
         
         #Casos Esquina
         
-        s0 = "M3ñ0$d8" #Longitud 7
-        s1 = "C@d3ñA_ca%a(|3&E$" #longitud 17
-        s3 = "" #longitud 0
-        s4 = "pa$$w0rD" #longitud 8
-        s5 = "169rháéíñ}Á!Qzp0"  #longitud 16
-        s6 = "|2E4$7()" #longitud 8
-        s7 = "ñp890dfWn.z<%éo#" #longitud 16
-        
+        s0 = "M3Ã±0$d8" #Longitud 7
+        s1 = "C@d3Ã±A_ca%a(|3&E$" #longitud 17
+        s2 = "" #longitud 0
+        s3 = "pa$$w0rD" #longitud 8
+        s4 = "169rhÃ¡Ã©Ã­Ã±}Ã�!Qzp0"  #longitud 16
+        s5 = "|2E4$7()" #longitud 8
+        s6 = "Ã±p890dfWn.z<%Ã©o#" #longitud 16
+
         aClsAccessControl = clsAccessControl()
         mensajeEncriptado = aClsAccessControl.encript(s0)
-        self.assertTrue(aClsAccessControl.check_password(mensajeEncriptado,s0),"Las contraseñas difieren en longitud o en contenido")
+        self.assertTrue(aClsAccessControl.check_password(mensajeEncriptado,s0),"Las contraseÃ±as difieren en longitud o en contenido")
