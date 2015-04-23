@@ -56,7 +56,7 @@ class ClsAccessControlTester(unittest.TestCase):
         
         #Casos válidos
         
-        #Caso I:    12 caracteres mismo contenido
+        #Caso J:    12 caracteres mismo contenido
         mensajeEncriptado = aClsAccessControl.encript(s9)
         self.assertTrue(aClsAccessControl.check_password(mensajeEncriptado,s9),"Las contraseñas deben coincidir")
  
