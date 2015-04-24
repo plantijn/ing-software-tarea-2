@@ -65,7 +65,7 @@ class ClsAccessControlTester(unittest.TestCase):
 c0 = ""         #longitud 0 
 
 c1 = "M3A0$d8"  #Longitud 7    caracteres válidos
-c2 = "_ko8E{}"  #longitud 7    con caracteres inválidos
+c2 = "_ko8E{}"  #longitud 7    caracteres inválidos
 c3 = "#.LpeW@"  #longitud 7    sin dígitos
 c4 = "$s@kpf*"  #longitud 7    sin digitos ni mayusculas
 c5 = "fToesQp"  #longitud 7    sin digitos ni caracteres especiales
@@ -74,30 +74,22 @@ c7 = "irj120k"  #longitud 7    sin mayusculas ni caracteres especiales
 c8 = "1F09ir2"  #longitud 7    sin caracteres especiales
 c9 = "fpeosnq"  #longitud 7    sin los requisitos minimos
 
-                           
-c9 = "C*@d$.3Aca#a3aE+$"    #longitud 17    caracteres válidos
-c10 = "#.LpeW@+lnkzA.@yl"    #longitud 17    sin dígitos
-                            #longitud 17    sin digitos ni mayusculas
-                            #longitud 17    sin digitos ni caracteres especiales
-                            #longitud 17    sin mayúsculas
-                            #longitud 17    sin mayusculas ni caracteres especiales
-                            #longitud 17    sin caracteres especiales
-                            #longitud 17    sin los requisitos minimos    
-
-s5 = "pa$$w0rD"             #longitud 8    caracteres válidos
-c5 = "#.LpeW@+lnkzA.@yl"    #longitud 8    sin dígitos
-                            #longitud 8    sin digitos ni mayusculas
-                            #longitud 8    sin digitos ni caracteres especiales
-                            #longitud 8    sin mayúsculas
-                            #longitud 8    sin mayusculas ni caracteres especiales
-                            #longitud 8    sin caracteres especiales
-                            #longitud 8    sin los requisitos minimos
+c19= "pa$$w0rD"  #longitud 8    caracteres válidos
+c20 = "_ko8E{?}"  #longitud 8    caracteres inválidos
+c21 = "#.LpeWr@"  #longitud 8    sin dígitos
+c22 = "$s@kp.f*"  #longitud 8    sin digitos ni mayusculas
+c23 = "fToesQhp"  #longitud 8    sin digitos ni caracteres especiales
+c24 = "d#6fo@.3"  #longitud 8    sin mayúsculas
+c25 = "irj1290k"  #longitud 8    sin mayusculas ni caracteres especiales
+c26 = "1F09irA2"  #longitud 8    sin caracteres especiales
+c27 = "fpeosrnq"  #longitud 8    sin los requisitos minimos
                               
-s6 = "169rh!Añg5wxQzp0"     #longitud 16    caracteres válidos
-c5 = "#.LpeW@+lnkzA.@yl"    #longitud 16    sin dígitos
-                            #longitud 16    sin digitos ni mayusculas
-                            #longitud 16    sin digitos ni caracteres especiales
-                            #longitud 16    sin mayúsculas
-                            #longitud 16    sin mayusculas ni caracteres especiales
-                            #longitud 16    sin caracteres especiales
-                            #longitud 16    sin los requisitos minimos
+c28 = "16.9rh@Ag5wxQzp0"  #longitud 16    caracteres válidos
+c29 = "_k?¡[ñ]<z]>o8E{}"  #longitud 16    caracteres inválidos
+c30 = "#.LpeWo@lEdff@#*"  #longitud 16    sin dígitos
+c31 = "$s@kpf#.*rthq+f*"  #longitud 16    sin digitos ni mayusculas
+c32 = "fToesQpUGndpwder"  #longitud 16    sin digitos ni caracteres especiales
+c33 = "d#6fo@3$.+*t34do"  #longitud 16    sin mayúsculas
+c34 = "irj120k720fnsl0j"  #longitud 16    sin mayusculas ni caracteres especiales
+c35 = "1F09ir2UNdpw3450"  #longitud 16    sin caracteres especiales
+c36 = "fpeosnqjdoengosq"  #longitud 16    sin los requisitos minimos
