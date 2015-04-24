@@ -30,13 +30,13 @@ class clsAccessControl(object):
                 salt = uuid.uuid4().hex
             # hash
                 oHash= hashlib.sha256(salt.encode() + value.encode()).hexdigest() + ':' + salt
-             
+                return oHash
             else:
-                print('El password no posee los caracteres correspondientes')
+                #print('El password no posee los caracteres correspondientes')
                 return oHash
         else:
-            print('El Password debe contener entre 8 y 16 caracteres')
-        return oHash   
+            #print('El Password debe contener entre 8 y 16 caracteres')
+            return oHash   
     
     def check_password(self, oPassworkEncript, oCheckPassword):
         # Verificar la longitud del password
@@ -48,10 +48,10 @@ class clsAccessControl(object):
                 oPassworkEncript, salt = oPassworkEncript.split(':')
                 return oPassworkEncript == hashlib.sha256(salt.encode() + oCheckPassword.encode()).hexdigest()
             else:
-                print('El password no posee los caracteres correspondientes')
+                #print('El password no posee los caracteres correspondientes')
                 return False
         else:
-            print('El Password no posee la cantidad de caracteres requerida')
+            #print('El Password no posee la cantidad de caracteres requerida')
             return False
     
     def length_password(self, user_password):
