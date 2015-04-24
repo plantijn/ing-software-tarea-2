@@ -8,8 +8,7 @@ from mdlaccesscontrol import *
 
 class ClsAccessControlTester(unittest.TestCase):
 
-       
-    def testClsAccessControlCheck_passwordFalse(self):
+    def testClsAccessControlCheck_passwordEncriptFalse(self):
         aClsAccessControl = clsAccessControl() 
         c0 = ""         #longitud 0
         mensajeEncriptado = ClsAccessControl.encript(c0)
@@ -43,7 +42,7 @@ class ClsAccessControlTester(unittest.TestCase):
         c9 = "fpeosnq"  #longitud 7    sin los requisitos minimos
         
         c10 = "C*@d$.3Aca#a3aE+$"    #longitud 17    caracteres válidos
-        c11 = ""                     #longitud 17    caracteres inválidos
+        c11 = "(-:cpsm09JK\?|{=]"    #longitud 17    caracteres inválidos
         c12 = "#.LpeW@+lnkzA.@yl"    #longitud 17    sin dígitos
         c13 = "k*sdj+fwei..weh@#"    #longitud 17    sin digitos ni mayusculas
         c14 = "MJiqJwieALniDGRou"    #longitud 17    sin digitos ni caracteres especiales
@@ -72,4 +71,24 @@ class ClsAccessControlTester(unittest.TestCase):
         c35 = "1F09ir2UNdpw3450"  #longitud 16    sin caracteres especiales
         c36 = "fpeosnqjdoengosq"  #longitud 16    sin los requisitos minimos
         
+        c37 = "pa$$w0rD."  #longitud 9    caracteres válidos
+        c38 = "_ko8E{?}¬"  #longitud 9    caracteres inválidos
+        c39 = "#.LpeWr@t"  #longitud 9    sin dígitos
+        c40 = "$s@kp.f*p"  #longitud 9    sin digitos ni mayusculas
+        c41 = "fToesQhpI"  #longitud 9    sin digitos ni caracteres especiales
+        c42 = "d#6fo@.3q"  #longitud 9    sin mayúsculas
+        c43 = "irj1290k1"  #longitud 9    sin mayusculas ni caracteres especiales
+        c44 = "1F09irA20"  #longitud 9    sin caracteres especiales
+        c45 = "fpeosrnql"  #longitud 9    sin los requisitos minimos
+    
+        c46 = "16.9rh@AgwxQzp0"  #longitud 15    caracteres válidos
+        c47 = "_k?¡[ñ]<z]o8E{}"  #longitud 15    caracteres inválidos
+        c48 = "#.LpWo@lEdff@#*"  #longitud 15    sin dígitos
+        c49 = "$s@kp#.*rthq+f*"  #longitud 15    sin digitos ni mayusculas
+        c50 = "fToesQpUGndpder"  #longitud 15    sin digitos ni caracteres especiales
+        c51 = "d#6o@3$.+*t34do"  #longitud 15    sin mayúsculas
+        c52 = "ir120k720fnsl0j"  #longitud 15    sin mayusculas ni caracteres especiales
+        c53 = "1F09ir2UNdpw350"  #longitud 15    sin caracteres especiales
+        c54 = "fpeosnqjdengosq"  #longitud 15    sin los requisitos minimos
+    
     #def testClsAccessControlCheck_passwordTrue(self):
