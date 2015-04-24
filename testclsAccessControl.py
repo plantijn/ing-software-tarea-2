@@ -84,7 +84,7 @@ c16 = "i3u48712384uioiqm"    #longitud 17    sin mayusculas ni caracteres especi
 c17 = "JFFefn93kNJK43672"    #longitud 17    sin caracteres especiales
 c18 = "00000000000000000"    #longitud 17    sin los requisitos minimos    
 
-c19= "pa$$w0rD"  #longitud 8    caracteres válidos
+c19= "pa$$w0rD"   #longitud 8    caracteres válidos
 c20 = "_ko8E{?}"  #longitud 8    caracteres inválidos
 c21 = "#.LpeWr@"  #longitud 8    sin dígitos
 c22 = "$s@kp.f*"  #longitud 8    sin digitos ni mayusculas
