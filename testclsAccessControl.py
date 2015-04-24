@@ -61,14 +61,43 @@ class ClsAccessControlTester(unittest.TestCase):
         self.assertTrue(aClsAccessControl.check_password(mensajeEncriptado,s9),"Las contraseñas deben coincidir")
  
 #CASOS      
-s0 = "M3A0$d8"              #Longitud 7
-s1 = "C@d3Ã±Aca%a(|3&E$"    #longitud 17
-s2 = "sR_r@5!"              #longitud 7
-s3 = "Pf47]d2<0o|1Rfa+l"    #longitud 17
-s4 = ""                     #longitud 0
-s5 = "pa$$w0rD"             #longitud 8
-s6 = "169rh!Añg5wxQzp0"     #longitud 16
-s7 = "|2E4$7()"             #longitud 8
-s8 = "Ã±p890dfWn.z<%o#"     #longitud 16
-s9 = "1ng.$ofTw@re"         #longitud 12 caracteres
-  
+
+c0 = ""         #longitud 0 
+
+c1 = "M3A0$d8"  #Longitud 7    caracteres válidos
+c2 = "_ko8E{}"  #longitud 7    con caracteres inválidos
+c3 = "#.LpeW@"  #longitud 7    sin dígitos
+c4 = "$s@kpf*"  #longitud 7    sin digitos ni mayusculas
+c5 = "fToesQp"  #longitud 7    sin digitos ni caracteres especiales
+c6 = "d#6fo@3"  #longitud 7    sin mayúsculas
+c7 = "irj120k"  #longitud 7    sin mayusculas ni caracteres especiales
+c8 = "1F09ir2"  #longitud 7    sin caracteres especiales
+c9 = "fpeosnq"  #longitud 7    sin los requisitos minimos
+
+                           
+c9 = "C*@d$.3Aca#a3aE+$"    #longitud 17    caracteres válidos
+c10 = "#.LpeW@+lnkzA.@yl"    #longitud 17    sin dígitos
+                            #longitud 17    sin digitos ni mayusculas
+                            #longitud 17    sin digitos ni caracteres especiales
+                            #longitud 17    sin mayúsculas
+                            #longitud 17    sin mayusculas ni caracteres especiales
+                            #longitud 17    sin caracteres especiales
+                            #longitud 17    sin los requisitos minimos    
+
+s5 = "pa$$w0rD"             #longitud 8    caracteres válidos
+c5 = "#.LpeW@+lnkzA.@yl"    #longitud 8    sin dígitos
+                            #longitud 8    sin digitos ni mayusculas
+                            #longitud 8    sin digitos ni caracteres especiales
+                            #longitud 8    sin mayúsculas
+                            #longitud 8    sin mayusculas ni caracteres especiales
+                            #longitud 8    sin caracteres especiales
+                            #longitud 8    sin los requisitos minimos
+                              
+s6 = "169rh!Añg5wxQzp0"     #longitud 16    caracteres válidos
+c5 = "#.LpeW@+lnkzA.@yl"    #longitud 16    sin dígitos
+                            #longitud 16    sin digitos ni mayusculas
+                            #longitud 16    sin digitos ni caracteres especiales
+                            #longitud 16    sin mayúsculas
+                            #longitud 16    sin mayusculas ni caracteres especiales
+                            #longitud 16    sin caracteres especiales
+                            #longitud 16    sin los requisitos minimos
