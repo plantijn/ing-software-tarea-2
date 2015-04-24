@@ -42,7 +42,7 @@ class clsAccessControl(object):
         # Verificar la longitud del password
         olength_password=self.length_password(oCheckPassword)        
         if olength_password>=8 and olength_password<=16:
-            validPassword= re.search(self.expressionRegular, value) 
+            validPassword= re.search(self.expressionRegular,oCheckPassword) 
             if validPassword:
                 # uuid es usado para generar numeros random
                 oPassworkEncript, salt = oPassworkEncript.split(':')
