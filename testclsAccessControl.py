@@ -75,13 +75,14 @@ c8 = "1F09ir2"  #longitud 7    sin caracteres especiales
 c9 = "fpeosnq"  #longitud 7    sin los requisitos minimos
 
 c10 = "C*@d$.3Aca#a3aE+$"    #longitud 17    caracteres válidos
-c11 = "#.LpeW@+lnkzA.@yl"    #longitud 17    sin dígitos
-c12 = "k*sdj+fwei..weh@#"    #longitud 17    sin digitos ni mayusculas
-c13 = "MJiqJwieALniDGRou"    #longitud 17    sin digitos ni caracteres especiales
-c14 = "@#$+zj*ic71c22x.."    #longitud 17    sin mayúsculas
-c15 = "i3u48712384uioiqm"    #longitud 17    sin mayusculas ni caracteres especiales
-c16 = "JFFefn93kNJK43672"    #longitud 17    sin caracteres especiales
-c17 = "00000000000000000"    #longitud 17    sin los requisitos minimos    
+c11 = "(-:cpsm09JK\?|{=]"    #longitud 17    caracteres inválidos
+c12 = "#.LpeW@+lnkzA.@yl"    #longitud 17    sin dígitos
+c13 = "k*sdj+fwei..weh@#"    #longitud 17    sin digitos ni mayusculas
+c14 = "MJiqJwieALniDGRou"    #longitud 17    sin digitos ni caracteres especiales
+c15 = "@#$+zj*ic71c22x.."    #longitud 17    sin mayúsculas
+c16 = "i3u48712384uioiqm"    #longitud 17    sin mayusculas ni caracteres especiales
+c17 = "JFFefn93kNJK43672"    #longitud 17    sin caracteres especiales
+c18 = "00000000000000000"    #longitud 17    sin los requisitos minimos    
 
 s5 = "pa$$w0rD"             #longitud 8    caracteres válidos
 c5 = "#.LpeW@+lnkzA.@yl"    #longitud 8    sin dígitos
