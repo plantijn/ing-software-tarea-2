@@ -15,7 +15,6 @@ class ClsAccessControlTester(unittest.TestCase):
         c0 = ""         #longitud 0
         self.assertEqual("", aClsAccessControl.encript(c0))
        
-        #Casos esquina
         c1 = "M3A0$d8"  #longitud 7    caracteres validos
         self.assertEqual("", aClsAccessControl.encript(c1))
         
@@ -170,7 +169,6 @@ class ClsAccessControlTester(unittest.TestCase):
     def testClsAccessControlEncriptTrue(self): 
         aClsAccessControl = clsAccessControl() 
         
-        #Casos
         c19= "pa$$w0rD"  #longitud 8    caracteres validos
         self.assertNotEqual("", aClsAccessControl.encript(c19))
         
@@ -197,7 +195,7 @@ class ClsAccessControlTester(unittest.TestCase):
         mensajeEncriptado = aClsAccessControl.encript(c2)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c2))
         
-        c3 = "#.LpeW@"  #longitud 7    sin dÃ­gitos
+        c3 = "#.LpeW@"  #longitud 7    sin digitos
         mensajeEncriptado = aClsAccessControl.encript(c3)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c3))
         
@@ -233,7 +231,7 @@ class ClsAccessControlTester(unittest.TestCase):
         mensajeEncriptado = aClsAccessControl.encript(c11)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c11))
         
-        c12 = "#.LpeW@+lnkzA.@yl"    #longitud 17    sin dÃ­gitos
+        c12 = "#.LpeW@+lnkzA.@yl"    #longitud 17    sin digitos
         mensajeEncriptado = aClsAccessControl.encript(c12)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c12))
         
@@ -265,7 +263,7 @@ class ClsAccessControlTester(unittest.TestCase):
         mensajeEncriptado = aClsAccessControl.encript(c20)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c20))
                 
-        c21 = "#.LpeWr@"  #longitud 8    sin dÃ­gitos
+        c21 = "#.LpeWr@"  #longitud 8    sin digitos
         mensajeEncriptado = aClsAccessControl.encript(c21)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c21))
                 
@@ -297,7 +295,7 @@ class ClsAccessControlTester(unittest.TestCase):
         mensajeEncriptado = aClsAccessControl.encript(c29)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c29))
                 
-        c30 = "#.LpeWo@lEdff@#*"  #longitud 16    sin dÃ­gitos
+        c30 = "#.LpeWo@lEdff@#*"  #longitud 16    sin digitos
         mensajeEncriptado = aClsAccessControl.encript(c30)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c30))
                 
@@ -329,7 +327,7 @@ class ClsAccessControlTester(unittest.TestCase):
         mensajeEncriptado = aClsAccessControl.encript(c38)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c38))
         
-        c39 = "#.LpeWr@t"  #longitud 9    sin dÃ­gitos
+        c39 = "#.LpeWr@t"  #longitud 9    sin digitos
         mensajeEncriptado = aClsAccessControl.encript(c39)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c39))
         
@@ -361,7 +359,7 @@ class ClsAccessControlTester(unittest.TestCase):
         mensajeEncriptado = aClsAccessControl.encript(c47)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c47))        
         
-        c48 = "#.LpWo@lEdff@#*"  #longitud 15    sin dÃ­gitos
+        c48 = "#.LpWo@lEdff@#*"  #longitud 15    sin digitos
         mensajeEncriptado = aClsAccessControl.encript(c48)
         self.assertFalse(aClsAccessControl.check_password(mensajeEncriptado,c48))        
         

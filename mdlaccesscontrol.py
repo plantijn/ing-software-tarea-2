@@ -2,7 +2,7 @@
 '''
 Created on 24/9/2014
 
-@author: Jean Carlos
+@author: Jean Carlos, Sahid Reyes 10-10603 y Carlos Plantijn 10-10572
 
 '''
 import uuid
